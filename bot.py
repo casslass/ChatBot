@@ -40,7 +40,7 @@ async def on_member_remove(member):
 
 @client.command()
 async def ping(ctx):
-    await ctx.send(f'Pong! {round(client.latency * 100)}ms')
+    await ctx.send(f'Pong! {round(client.latency * 1000)}ms')
 
 # import random to get random response.
 # 8 ball command uses list of strings used to invoke command.
